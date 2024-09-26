@@ -9,6 +9,7 @@ body {
 }
 img {
     display: block;
+    max-width: 100%;
 }
 h1 h2 h3 h4 h5 h6 p {
     margin: 0;
@@ -23,9 +24,7 @@ a {
     color: #434455;
 }
 .container { 
-max-width: 1158px;
-padding-left: 15px; 
-padding-right: 15px; 
+max-width: 1158px; 
 margin: 0 auto;
 margin-left: 156px; 
 margin-right: 156px; 
@@ -164,11 +163,13 @@ margin-right: 156px;
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advantages-list {
     display: flex;
