@@ -33,6 +33,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-link,
@@ -125,6 +126,7 @@ header .container {
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 48px;
 }
 .title-button {
     font-weight: 500;
@@ -136,6 +138,9 @@ header .container {
     background-color: #4D5AE5;
     cursor: pointer;
     display: inline-flex;
+    width: max-content;
+    margin: 0 auto;
+    padding: 16px 32px 16px 32px;
 }
 .title-button:hover {
     background-color: #404BBF;
@@ -181,7 +186,8 @@ header .container {
     display: flex;
     gap: 24px;
     justify-content: space-between;
-    gap: 12px;
+    flex-basis: calc((100%-24px)/3);
+    padding-bottom: 120px;
 }
 .team-section {
     background: #f4f4fd;
@@ -223,8 +229,15 @@ header .container {
 
 /* Section 4 */
 
-
-.portfolio {
+.portfolio .container ul {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: calc((100%-24px)/3);
+    padding-bottom: 120px;   
+}
+.portfolio-title {
     font-weight: 700;
     font-size: 36px; 
     line-height: 1.11;
@@ -233,26 +246,43 @@ header .container {
     text-transform: capitalize;
     letter-spacing: 0.02em;
 }
-.portfolio-title {
+.portfolio-list-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.20;
     color: #2e2f42;
     letter-spacing: 0.02em;
+    padding-left: 16px;
+    
 }
 .portfolio-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
+    padding-left: 16px;
+    
 }
-
+.card:not(img)  {
+    display: block;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+}
+.card img{
+    border: 0;
+}
 
 
 /* Footer */
 
 .footer {
     background-color: #2E2F42;
+}
+.footer .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 264px;
 }
 .logo-footer {
     font-family: "Raleway", sans-serif;
