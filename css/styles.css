@@ -26,6 +26,7 @@ a {
 max-width: 1158px;
 padding-left: 15px; 
 padding-right: 15px; 
+margin: 0 auto;
 margin-left: 156px; 
 margin-right: 156px; 
 }
@@ -38,6 +39,7 @@ margin-right: 156px;
 }
 .header .container {
     display: flex;
+     
 }
 .nav-link  {
     display: flex;
@@ -159,7 +161,14 @@ margin-right: 156px;
     padding: 120px 0;
 }
 .visually-hidden {
-    display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 .advantages-list {
     display: flex;
