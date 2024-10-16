@@ -86,9 +86,22 @@ padding: 0 15px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    position: relative;
+    
 }
 .header-nav-link:hover {
     color: #404bbf;
+}
+.header-nav-link:hover::after {
+    content: '';
+    width:  100%;
+    display: block;
+    background-color: #404BBF;
+    border-radius: 2px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+
 }
 .header-nav-link:focus {
     color: #404bbf;
@@ -118,9 +131,15 @@ padding: 0 15px;
 /* Section 1 */
 
 .title {
+    display: block;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #2E2F42;
     padding: 188px 0;
-    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .title-header {
     font-weight: 700px;
@@ -308,10 +327,6 @@ padding: 0 15px;
 .footer {
     background-color: #2E2F42;
     padding: 100px 0;
-}
-.footer .container {
-    
-
 }
 .logo-footer {
     font-family: "Raleway", sans-serif;
